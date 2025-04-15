@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace SimulacionBolillero 
+namespace SimulacionBolillero
 {
-    public class Bolillero : MecanicaAleatoria, MecanicaFija
+    public class Bolillero : MecanicaAleatoria,  ICloneable, MecanicaFija
     {
         List<int> NumerosBolilleros;
         List<int> numerosElegidos;
         int JugarNveces;
         List<int> BolillasFuera;
+
         public Bolillero(List<int> numElegidos, int jugarXveces, int RngBolillero)
         {
-            numerosElegidos = numElegidos;
+            numerosElegidos = new List<int>(numElegidos);
             JugarNveces = jugarXveces;
 
             NumerosBolilleros = new List<int>();
@@ -27,18 +26,16 @@ namespace SimulacionBolillero
             }
         }
 
-
         public void MeterBolillasFuera()
         {
             NumerosBolilleros.AddRange(BolillasFuera);
             BolillasFuera.Clear();
         }
+
         void PrimerBolilla(List<int> NumerosBolilleros, List<int> BolillasFuera)
         {
             var bolilla = NumerosBolilleros[0];
-
             NumerosBolilleros.RemoveAt(0);
-
             BolillasFuera.Add(bolilla);
         }
 
@@ -52,11 +49,13 @@ namespace SimulacionBolillero
 
             if (numerosElegidos.SequenceEqual(BolillasFuera))
             {
-                gano = true; 
+                gano = true;
             }
+
             MeterBolillasFuera();
             return gano;
         }
+
         public bool JugarFija()
         {
             bool gano = false;
@@ -69,21 +68,29 @@ namespace SimulacionBolillero
             {
                 gano = true;
             }
+
             MeterBolillasFuera();
             return gano;
         }
 
-        public int JugarXveces(int jugarXveces, List<int>NumerosGanadores)
+        public int SimularSinHilos(int SimularXveces, List<int> NumerosGanadores)
         {
             int VecesGanadas = 0;
-            for (int i = 0; i < jugarXveces; i++)
+            for (int i = 0; i < SimularXveces; i++)
             {
-                if(JugarRandom()){
-                    VecesGanadas =+ 1;
+                if (JugarRandom())
+                {
+                    VecesGanadas += 1;
                 }
             }
             return VecesGanadas;
         }
 
+        public object Clone()
+        {
+            var copiaNumerosElegidos = new List<int>(numerosElegidos);
+            var copia = new Bolillero(copiaNumerosElegidos, JugarNveces, NumerosBolilleros.Count);
+            return copia;
+        }
     }
 }

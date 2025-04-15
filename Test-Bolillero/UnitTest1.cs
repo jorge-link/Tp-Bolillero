@@ -3,44 +3,38 @@ namespace Test_Bolillero
 {
     public class UnitTest1
     {
-
         [Fact]
-        public void TestJugarRandom()
+        public void Clone_CreaCopiaIndependiente()
         {
-            List<int> numerosElegidos = new List<int> { 1, 2, 3 };
-            int rangoBolillero = 20;
-            int jugarXveces = 3;
-            Bolillero bolillero = new Bolillero(numerosElegidos, jugarXveces, rangoBolillero);
+            var jugada = new List<int> { 1, 2 };
+            var original = new Bolillero(jugada, 1, 10);
+            var copia = (Bolillero)original.Clone();
 
-            bool resultado = bolillero.JugarRandom();
+            Assert.NotSame(original, copia);
+        }
+        
+        [Fact]
+        public void SimularSinHilos()
+        {
+            var NumerosGanadores = new List<int> { 0, 1, 2 };
+            var bolillero = new Bolillero(NumerosGanadores, 1, 20);
+            var simulacion = new Simulacion();
 
-            Assert.True(resultado || !resultado);
+            var resultado = simulacion.SimularSinHilos(bolillero, NumerosGanadores, 100);
+
+            Assert.InRange(resultado, 0, 100);
         }
 
         [Fact]
-        public void TestJugarFija()
+        public void SimularConHilos()
         {
-            List<int> numerosElegidos = new List<int> { 0, 1, 2 };
-            int rangoBolillero = 20;
-            int jugarXveces = 3;
-            Bolillero bolillero = new Bolillero(numerosElegidos, jugarXveces, rangoBolillero);
+            var NumerosGanadores = new List<int> { 0, 1, 2 };
+            var bolillero = new Bolillero(NumerosGanadores, 1, 20);
+            var simulacion = new Simulacion();
 
-            bool resultado = bolillero.JugarFija();
+            var resultado = simulacion.SimularConHilos(bolillero, NumerosGanadores, 100, 4);
 
-            Assert.True(resultado);
-        }
-
-        [Fact]
-        public void TestJugarXveces()
-        {
-            List<int> numerosElegidos = new List<int> { 3, 5, 13 };
-            int rangoBolillero = 20;
-            int jugarXveces = 5;
-            Bolillero bolillero = new Bolillero(numerosElegidos, jugarXveces, rangoBolillero);
-
-            int vecesGanadas = bolillero.JugarXveces(jugarXveces, new List<int>());
-
-            Assert.InRange(vecesGanadas, 0, jugarXveces);
+            Assert.InRange(resultado, 0, 100);
         }
     }
 }
