@@ -5530,11 +5530,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\JorgeCasco6-8\\Test-Bolillero\\Test-Bolillero.csproj",
+      "projectUniqueName": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\Test-Bolillero.csproj",
       "projectName": "Test-Bolillero",
-      "projectPath": "C:\\Repos\\JorgeCasco6-8\\Test-Bolillero\\Test-Bolillero.csproj",
+      "projectPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\Test-Bolillero.csproj",
       "packagesPath": "C:\\Users\\Lab15-PC01\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\JorgeCasco6-8\\Test-Bolillero\\obj\\",
+      "outputPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5556,8 +5556,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Repos\\JorgeCasco6-8\\Bolillero\\SimulacionBolillero.csproj": {
-              "projectPath": "C:\\Repos\\JorgeCasco6-8\\Bolillero\\SimulacionBolillero.csproj"
+            "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\SimulacionBolillero.csproj": {
+              "projectPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\SimulacionBolillero.csproj"
             }
           }
         }

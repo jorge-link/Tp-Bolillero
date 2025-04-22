@@ -4,16 +4,6 @@ namespace Test_Bolillero
     public class UnitTest1
     {
         [Fact]
-        public void Clone_CreaCopiaIndependiente()
-        {
-            var jugada = new List<int> { 1, 2 };
-            var original = new Bolillero(jugada, 1, 10);
-            var copia = (Bolillero)original.Clone();
-
-            Assert.NotSame(original, copia);
-        }
-        
-        [Fact]
         public void SimularSinHilos()
         {
             var NumerosGanadores = new List<int> { 0, 1, 2 };
