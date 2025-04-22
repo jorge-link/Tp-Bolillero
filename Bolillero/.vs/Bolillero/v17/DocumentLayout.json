@@ -3,27 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D79B715B-0685-4049-B945-5B5C390C8A46}|..\\Test-Bolillero\\Test-Bolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\test-bolillero\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\bolillero\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\bolillero\\mecanicafija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|solutionrelative:mecanicafija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\bolillero\\simulacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|solutionrelative:simulacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\bolillero\\bolillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|solutionrelative:bolillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\bolillero\\simulacionbolillero.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|solutionrelative:simulacionbolillero.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\bolillero\\mecanicaaleatoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|solutionrelative:mecanicaaleatoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D79B715B-0685-4049-B945-5B5C390C8A46}|..\\Test-Bolillero\\Test-Bolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\test-bolillero\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,78 +26,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\Test-Bolillero\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\UnitTest1.cs",
-              "RelativeToolTip": "..\\Test-Bolillero\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Title": "Simulacion.cs",
+              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Simulacion.cs",
+              "RelativeDocumentMoniker": "Simulacion.cs",
+              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Simulacion.cs",
+              "RelativeToolTip": "Simulacion.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T11:13:16.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SimulacionBolillero.csproj",
-              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\SimulacionBolillero.csproj",
-              "RelativeDocumentMoniker": "SimulacionBolillero.csproj",
-              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\SimulacionBolillero.csproj",
-              "RelativeToolTip": "SimulacionBolillero.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-15T11:08:07.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MecanicaFija.cs",
-              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\MecanicaFija.cs",
-              "RelativeDocumentMoniker": "MecanicaFija.cs",
-              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\MecanicaFija.cs",
-              "RelativeToolTip": "MecanicaFija.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T12:57:55.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MecanicaAleatoria.cs",
-              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\MecanicaAleatoria.cs",
-              "RelativeDocumentMoniker": "MecanicaAleatoria.cs",
-              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\MecanicaAleatoria.cs",
-              "RelativeToolTip": "MecanicaAleatoria.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T11:29:21.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Bolillero.cs",
-              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Bolillero.cs",
-              "RelativeDocumentMoniker": "Bolillero.cs",
-              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Bolillero.cs",
-              "RelativeToolTip": "Bolillero.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAA4wDQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T11:20:35.595Z",
+              "WhenOpened": "2025-04-22T12:37:16.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "Bolillero.cs",
+              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Bolillero.cs",
+              "RelativeDocumentMoniker": "Bolillero.cs",
+              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Bolillero.cs",
+              "RelativeToolTip": "Bolillero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T11:17:49.507Z",
+              "WhenOpened": "2025-04-22T11:35:56.081Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\Test-Bolillero\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\UnitTest1.cs",
+              "RelativeToolTip": "..\\Test-Bolillero\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T11:33:18.795Z"
             }
           ]
         }
