@@ -3,44 +3,60 @@ namespace Test_Bolillero
 {
     public class UnitTest1
     {
-
         [Fact]
-        public void TestJugarRandom()
+        public void SacarBolilla()
         {
-            List<int> numerosElegidos = new List<int> { 1, 2, 3 };
-            int rangoBolillero = 20;
-            int jugarXveces = 3;
-            Bolillero bolillero = new Bolillero(numerosElegidos, jugarXveces, rangoBolillero);
+            var numerosElegidos = new List<int> { 0 }; // solo para que compile
+            var bolillero = new Bolillero(numerosElegidos, 1, 10);
 
-            bool resultado = bolillero.JugarRandom();
+            bolillero.SacarBolilla(); // Saca la primera bolilla
 
-            Assert.True(resultado || !resultado);
+            Assert.Contains(0, bolillero.BolillasFuera);
+            Assert.Equal(9, bolillero.NumerosBolilleros.Count);
+            Assert.Single(bolillero.BolillasFuera);
         }
 
         [Fact]
-        public void TestJugarFija()
+        public void ReIngresar()
         {
-            List<int> numerosElegidos = new List<int> { 0, 1, 2 };
-            int rangoBolillero = 20;
-            int jugarXveces = 3;
-            Bolillero bolillero = new Bolillero(numerosElegidos, jugarXveces, rangoBolillero);
+            var numerosElegidos = new List<int> { 0 };
+            var bolillero = new Bolillero(numerosElegidos, 1, 10);
 
-            bool resultado = bolillero.JugarFija();
+            bolillero.JugarFija();
+            bolillero.MeterBolillasFuera();
 
-            Assert.True(resultado);
+            Assert.Equal(10, bolillero.NumerosBolilleros.Count);
+            Assert.Empty(bolillero.BolillasFuera);
         }
 
         [Fact]
-        public void TestJugarXveces()
+        public void JugarGana()
         {
-            List<int> numerosElegidos = new List<int> { 3, 5, 13 };
-            int rangoBolillero = 20;
-            int jugarXveces = 5;
-            Bolillero bolillero = new Bolillero(numerosElegidos, jugarXveces, rangoBolillero);
+            var jugadaGanadora = new List<int> { 0, 1, 2, 3 };
+            var bolillero = new Bolillero(jugadaGanadora, 1, 10);
 
-            int vecesGanadas = bolillero.JugarXveces(jugarXveces, new List<int>());
+            bool gano = bolillero.JugarFija();
+            Assert.True(gano);
+        }
 
-            Assert.InRange(vecesGanadas, 0, jugarXveces);
+        [Fact]
+        public void JugarPierde()
+        {
+            var jugadaPerdedora = new List<int> { 4, 2, 1 };
+            var bolillero = new Bolillero(jugadaPerdedora, 1, 10);
+
+            bool gano = bolillero.JugarFija();
+            Assert.False(gano);
+        }
+
+        [Fact]
+        public void GanarNVeces()
+        {
+            var jugada = new List<int> { 0, 1 };
+            var bolillero = new Bolillero(jugada, 1, 10);
+
+            bool gano = bolillero.JugarFija();
+            Assert.True(gano);
         }
     }
 }

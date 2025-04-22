@@ -9,10 +9,10 @@ namespace SimulacionBolillero
 {
     public class Bolillero : MecanicaAleatoria, MecanicaFija
     {
-        List<int> NumerosBolilleros;
-        List<int> numerosElegidos;
-        int JugarNveces;
-        List<int> BolillasFuera;
+        public List<int> NumerosBolilleros;
+        public List<int> numerosElegidos;
+        public int JugarNveces;
+        public List<int> BolillasFuera;
         public Bolillero(List<int> numElegidos, int jugarXveces, int RngBolillero)
         {
             numerosElegidos = numElegidos;
@@ -33,7 +33,7 @@ namespace SimulacionBolillero
             NumerosBolilleros.AddRange(BolillasFuera);
             BolillasFuera.Clear();
         }
-        void PrimerBolilla(List<int> NumerosBolilleros, List<int> BolillasFuera)
+        public void PrimerBolilla(List<int> NumerosBolilleros, List<int> BolillasFuera)
         {
             var bolilla = NumerosBolilleros[0];
 
@@ -71,6 +71,10 @@ namespace SimulacionBolillero
             }
             MeterBolillasFuera();
             return gano;
+        }
+        public void SacarBolilla()
+        {
+            PrimerBolilla(NumerosBolilleros, BolillasFuera);
         }
 
         public int JugarXveces(int jugarXveces, List<int>NumerosGanadores)
