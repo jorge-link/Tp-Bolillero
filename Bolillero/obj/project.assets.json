@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jorge\\.nuget\\packages\\": {}
+    "C:\\Users\\Lab15-PC01\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jorge\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\SimulacionBolillero.csproj",
+      "projectUniqueName": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\SimulacionBolillero.csproj",
       "projectName": "SimulacionBolillero",
-      "projectPath": "C:\\Users\\jorge\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\SimulacionBolillero.csproj",
-      "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jorge\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\obj\\",
+      "projectPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\SimulacionBolillero.csproj",
+      "packagesPath": "C:\\Users\\Lab15-PC01\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lab15-PC01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -45,7 +51,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -66,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

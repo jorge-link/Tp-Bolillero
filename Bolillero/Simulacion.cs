@@ -24,7 +24,7 @@ namespace SimulacionBolillero
             return ganadas;
         }
 
-        public long SimularConHilos(Bolillero bolillero, List<int> jugada, int cantidadSimulaciones, int cantidadHilos)
+        public long SimularConHilos(Bolillero bolillero, int cantidadSimulaciones, int cantidadHilos)
         {
             int totalGanadas = 0;
             int simulacionesBase = cantidadSimulaciones / cantidadHilos;

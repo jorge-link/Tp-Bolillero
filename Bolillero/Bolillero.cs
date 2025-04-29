@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -30,6 +31,10 @@ namespace SimulacionBolillero
         {
             NumerosBolilleros.AddRange(BolillasFuera);
             BolillasFuera.Clear();
+        }
+        public void OrdenarBolillas()
+        {
+            NumerosBolilleros.Sort();
         }
 
         void PrimerBolilla(List<int> NumerosBolilleros, List<int> BolillasFuera)
@@ -70,17 +75,18 @@ namespace SimulacionBolillero
             }
 
             MeterBolillasFuera();
+            OrdenarBolillas();
             return gano;
         }
 
-        public int SimularSinHilos(int SimularXveces, List<int> NumerosGanadores)
+        public int SimularSinHilosFija()
         {
             int VecesGanadas = 0;
-            for (int i = 0; i < SimularXveces; i++)
+            for (int i = 0; i < JugarNveces; i++)
             {
-                if (JugarRandom())
+                if (JugarFija())
                 {
-                    VecesGanadas += 1;
+                    VecesGanadas++;
                 }
             }
             return VecesGanadas;
