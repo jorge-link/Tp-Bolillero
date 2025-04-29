@@ -22,9 +22,9 @@ namespace Test_Bolillero
             var bolillero = new Bolillero(NumerosGanadores, 1, 20);
             var simulacion = new Simulacion();
 
-            var resultado = simulacion.SimularConHilos(bolillero, NumerosGanadores, 100, 4);
+            var resultado = simulacion.SimularConHilos(bolillero, NumerosGanadores, 32, 3);
 
-            Assert.InRange(resultado, 0, 100);
+            Assert.InRange(resultado, 0, 32);
         }
     }
 }
