@@ -24,9 +24,8 @@ namespace SimulacionBolillero
             return ganadas;
         }
 
-        public long SimularConHilos(Bolillero bolillero, int cantidadSimulaciones, int cantidadHilos)
+        public static List<Task<int>> MecanicaSimulacionConTareas(Bolillero bolillero, int cantidadSimulaciones, int cantidadHilos)
         {
-            int totalGanadas = 0;
             int simulacionesBase = cantidadSimulaciones / cantidadHilos;
             int simulacionesRestantes = cantidadSimulaciones % cantidadHilos;
 
@@ -54,7 +53,13 @@ namespace SimulacionBolillero
                     return ganadas;
                 }));
             }
+            return tareas;
+        }
 
+        public long SimularConHilos(Bolillero bolillero, int cantidadSimulaciones, int cantidadHilos)
+        {
+            int totalGanadas = 0;
+            var tareas = MecanicaSimulacionConTareas(bolillero, cantidadSimulaciones, cantidadHilos);
             Task.WaitAll(tareas.ToArray());
 
             foreach (var t in tareas)
@@ -67,33 +72,7 @@ namespace SimulacionBolillero
 
         public async Task<long> SimularConHilosAsync(Bolillero bolillero, int cantidadSimulaciones, int cantidadHilos)
         {
-            int simulacionesBase = cantidadSimulaciones / cantidadHilos;
-            int simulacionesRestantes = cantidadSimulaciones % cantidadHilos;
-
-            var tareas = new List<Task<int>>();
-
-            for (int i = 0; i < cantidadHilos; i++)
-            {
-                int simulacionesParaEsteHilo = simulacionesBase;
-                if (i < simulacionesRestantes)
-                {
-                    simulacionesParaEsteHilo++;
-                }
-
-                tareas.Add(Task.Run(() =>
-                {
-                    int ganadas = 0;
-                    for (int j = 0; j < simulacionesParaEsteHilo; j++)
-                    {
-                        var copiaBolillero = (Bolillero)bolillero.Clone();
-                        if (copiaBolillero.JugarRandom())
-                        {
-                            ganadas++;
-                        }
-                    }
-                    return ganadas;
-                }));
-            }
+            var tareas = MecanicaSimulacionConTareas(bolillero, cantidadSimulaciones, cantidadHilos);
 
             var resultados = await Task.WhenAll(tareas);
 
