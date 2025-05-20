@@ -65,5 +65,40 @@ namespace SimulacionBolillero
             return totalGanadas;
         }
 
+        public async Task<long> SimularConHilosAsync(Bolillero bolillero, int cantidadSimulaciones, int cantidadHilos)
+        {
+            int simulacionesBase = cantidadSimulaciones / cantidadHilos;
+            int simulacionesRestantes = cantidadSimulaciones % cantidadHilos;
+
+            var tareas = new List<Task<int>>();
+
+            for (int i = 0; i < cantidadHilos; i++)
+            {
+                int simulacionesParaEsteHilo = simulacionesBase;
+                if (i < simulacionesRestantes)
+                {
+                    simulacionesParaEsteHilo++;
+                }
+
+                tareas.Add(Task.Run(() =>
+                {
+                    int ganadas = 0;
+                    for (int j = 0; j < simulacionesParaEsteHilo; j++)
+                    {
+                        var copiaBolillero = (Bolillero)bolillero.Clone();
+                        if (copiaBolillero.JugarRandom())
+                        {
+                            ganadas++;
+                        }
+                    }
+                    return ganadas;
+                }));
+            }
+
+            var resultados = await Task.WhenAll(tareas);
+
+            return resultados.Sum();
+        }
+
     }
 }

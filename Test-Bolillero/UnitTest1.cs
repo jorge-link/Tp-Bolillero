@@ -26,6 +26,19 @@ namespace Test_Bolillero
 
             Assert.InRange(resultado, 0, 32);
         }
+
+        [Fact]
+        public async Task SimularConHilosAsyncTest()
+        {
+            var NumerosGanadores = new List<int> { 0, 1, 2 };
+            var bolillero = new Bolillero(NumerosGanadores, 1, 20);
+            var simulacion = new Simulacion();
+
+            var resultado = await simulacion.SimularConHilosAsync(bolillero, 61, 4);
+
+            Assert.InRange(resultado, 0, 32);
+        }
+
         [Fact]
         public void PruebaCopia()
         {

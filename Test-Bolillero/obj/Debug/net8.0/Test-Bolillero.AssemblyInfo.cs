@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Test-Bolillero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08684aa7c74b917a54aae3511a085e4c52c6f526")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00791f431abfe72e6f8ca56c4624b499db03428a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Test-Bolillero")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Test-Bolillero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
