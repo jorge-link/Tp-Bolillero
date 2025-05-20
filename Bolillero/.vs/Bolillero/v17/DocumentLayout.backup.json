@@ -8,6 +8,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{D79B715B-0685-4049-B945-5B5C390C8A46}|..\\Test-Bolillero\\Test-Bolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\test-bolillero\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|c:\\users\\lab15-pc01\\documents\\github\\tp-bolillero\\bolillero\\bolillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{836D6A9E-BBE8-43D5-8735-675AF35B4FAD}|SimulacionBolillero.csproj|solutionrelative:bolillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,21 +21,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\Test-Bolillero\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\UnitTest1.cs",
-              "RelativeToolTip": "..\\Test-Bolillero\\UnitTest1.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwB0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:44:15.97Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,9 +31,34 @@
               "RelativeDocumentMoniker": "Simulacion.cs",
               "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Simulacion.cs",
               "RelativeToolTip": "Simulacion.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwGQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAowEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:15:16.566Z",
+              "WhenOpened": "2025-05-20T13:27:10.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bolillero.cs",
+              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Bolillero.cs",
+              "RelativeDocumentMoniker": "Bolillero.cs",
+              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Bolillero\\Bolillero.cs",
+              "RelativeToolTip": "Bolillero.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwE0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T11:35:56.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\Test-Bolillero\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Tp-Bolillero\\Test-Bolillero\\UnitTest1.cs",
+              "RelativeToolTip": "..\\Test-Bolillero\\UnitTest1.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T11:33:18.795Z",
               "EditorCaption": ""
             }
           ]

@@ -62,10 +62,7 @@ namespace SimulacionBolillero
             var tareas = MecanicaSimulacionConTareas(bolillero, cantidadSimulaciones, cantidadHilos);
             Task.WaitAll(tareas.ToArray());
 
-            foreach (var t in tareas)
-            {
-                totalGanadas += t.Result;
-            }
+            totalGanadas = tareas.Sum(t => t.Result);
 
             return totalGanadas;
         }
