@@ -8,7 +8,8 @@ namespace SimulacionBolillero
 {
     public class Simulacion
     {
-        public long SimularSinHilos(Bolillero bolillero, List<int> jugada, int cantidadSimulaciones)
+
+        public long SimularSinHilos(Bolillero bolillero, long cantidadSimulaciones)
         {
             int ganadas = 0;
 
@@ -76,5 +77,30 @@ namespace SimulacionBolillero
             return resultados.Sum();
         }
 
+
+        public async Task<long> SimularParallelAsync(Bolillero bolillero, int cantidadSimulaciones, int cantidadHilos)
+        {
+            long SimulacionesGanadas = 0;
+            long SimulacionesRestantes = cantidadSimulaciones % cantidadHilos;
+
+            long simsMinPorHilo = (cantidadSimulaciones - SimulacionesRestantes) / cantidadHilos;
+
+            Task<long>[] tareas = new Task<long>[cantidadHilos];
+
+            long[] resultados = new long[cantidadHilos];
+
+            await Task.Run(() =>
+            {
+                Parallel.For(0, cantidadHilos, i =>
+                {
+                    long simsPorHilo = simsMinPorHilo + (SimulacionesRestantes > i ? 1 : 0);
+
+                    resultados[i] = SimularSinHilos(bolillero, simsPorHilo);
+                });
+            });
+            SimulacionesGanadas = resultados.Sum();
+
+            return SimulacionesGanadas;
+        }
     }
 }
